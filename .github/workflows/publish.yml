@@ -1,5 +1,7 @@
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - '*'
 name: Publish to the Factorio mod portal
 jobs:
   publish:
